@@ -12,8 +12,8 @@ img{
   display:block;
   margin-left:auto;
   margin-right:auto;
-  width: 35%;
-  style = "width: 500px; height: 337.37px;"
+  width: 50%;
+  /* style = "width: 500px; height: 337.37px;" */
 }
 
 
@@ -24,12 +24,13 @@ h1{
   letter-spacing: 4px;
   text-align: center;
   font-family: "gill sans";
+  margin-top: 55px;
 }
 
 h2{
   color: #5E6060;
   font-size: 30px;
-  font-weight: 400
+  font-weight: 400;
   letter-spacing: 4px;
   text-align: center;
   font-family: "gill sans";
@@ -43,22 +44,38 @@ p{
   font-family: "gill sans";
 }
 
+
 #background{
   background-color: #E1FEFC !important;
 }
 
 #navbar{
+  background-color: #E1FEFC;
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  transition: top .2s;
   margin-left: 100px!important;
   margin-right: 100px !important;
+}
+
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #E1FEFC;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
 }
 
 #headername{
   font-size: 25px !important;
   letter-spacing: 3px !important;
   font-family:"gill sans" !important;
-  color: #5E6060 !important;
-  font-weight: 300px !important;
-  padding-left: 100px
+  color: #5E6060!important;
+  
+  padding-left: 100px;
 }
 
 #linkstyles{
@@ -91,7 +108,8 @@ p{
   font-weight: 300;
   font-size: 4.5em;
   color: #402d2d;
-  font-family: "gill sans"
+  font-family: "gill sans";
+  margin-top: 75px;
 }
 
 .ml5 .text-wrapper {
@@ -268,50 +286,26 @@ body {
     perspective: 1000px;
   }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
 
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-.flip-card-front {
-    background-color: #bbb;
-    color: #5E6060;
-  }
-
-.flip-card-back {
-    background-color: dodgerblue;
-    color: #5E6060;
-    transform: rotateY(180deg);
-  }
 
   <!--Photo Gallery-->
+
   .container {
     position: relative;
-    width: 50%;
+    width: 100%;
+    justify-content: center;
   }
 
   .image {
     opacity: 1;
     display: block;
-    width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    width: 95%;
   }
 
   .middle {
@@ -324,16 +318,38 @@ body {
     -ms-transform: translate(-50%, -50%)
   }
 
-  .container:hover .image {
-    opacity: 0.3;
+  .col-lg-4:hover .image {
+    opacity: 0.3 ;
   }
 
-  .container:hover .middle {
+  .col-lg-4:hover .middle {
     opacity: 1;
   }
 
   .text {
-    background-color: #4CAF50;
+    background-color: #31B6A0;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+<!--Image Grid-->
+
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 50%;
+    padding: 0 4px;
+    margin: 0 px;
+  }
+
+  .column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%
+  }
