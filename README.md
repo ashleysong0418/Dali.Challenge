@@ -7,6 +7,6 @@ and am eager to put in a lot of time and effort to improving and growing in my s
 CS52 and CS10 next term so that I can really grow in my skills for web development and coding in general. 
 Thank you for the opportunity! 
 
-##Accessing my website
+# Accessing my website
 My URL is ashleyysong.me . This link will lead you to my main homepage. From there, I have
 links to my film photography portfolio, and About Me page, and a contact page.
